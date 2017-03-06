@@ -52,6 +52,10 @@ p,blockquote,ul, ol
   margin:10px auto;
   margin:1rem auto;
 }
+img
+{
+  max-width:100%;
+}
 #header-stripe
 {
   background:#393e3f;

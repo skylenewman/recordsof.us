@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!-- <link rel="stylesheet" href="/css/normalize.css" /> -->
     <link rel="stylesheet" href="/css/pakyow-reset.css" />
-    <link rel="stylesheet" href="/css/bootstrap-customized-2dd0293d937b54b8f03503456fcb624a/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="/css/bootstrap-customized-2dd0293d937b54b8f03503456fcb624a/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="/js/bootstrap-customized-2dd0293d937b54b8f03503456fcb624a/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
 
@@ -67,10 +68,49 @@
     </div>
     <div class="container">
         <h1></h1>
-<h2>The Records of Us podcast helps people who want to share their family histories by introducing them to individuals who tell stories through speaking, design, film, and written word. We discuss their process and give approachable, actionable advice.</h2>
+<style>
+* {
+  box-sizing: border-box;
+}
+.cube-bg div
+{
+  background-color: #17485e;
+}
+.cube-bg button.btn
+{
+  color:#17485e;
+  background-color:white;
+}
+.cube-bg button.btn:hover
+{
+  background-color: #52c4ff;
+}
+</style>
+<h2 style="margin:2.5em auto 3em;">The Records of Us podcast helps people who want to share their family histories by introducing them to individuals who tell stories through speaking, design, film, and written word. We discuss their process and give approachable, actionable advice.</h2>
+<div class="cube-bg" style="color:white;  border: 25px solid white;
+  border-image-source: url(/images/alpha-border-image.png);
+  border-image-slice: 51 51;
+
+  border-image-repeat: round;">
+  <div style="padding:3em 1.125em;">
+    <h3>Want to be notified as content becomes available?</h3>
+    <p>Sign up today to receive updates on the podcast and get early access to every episode. </p>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" class="form-control" placeholder="Enter Your Email"/>
+      </div>
+      <div class="form-group">
+        <label for="email">Name</label>
+        <input type="text" name="email" id="email" class="form-control" placeholder="What should we call you?"/>
+      </div>
+      <button class="btn">Sign Up Now</button>
+    </form>
+  </div>
+</div>
 
 
-
+        
     </div>
   </body>
 
