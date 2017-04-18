@@ -116,12 +116,19 @@
 <script>
 $('.btn').click(function(e){
   e.preventDefault();
+  $('form p').remove();
   $.ajax({
     url: 'https://fathomless-lowlands-31121.herokuapp.com/entries/new',
+    // url: 'http://localhost:3000/entries/new',
     type: 'post',
     contentType: "application/json; charset=utf-8",
     dataType: 'jsonp',
     data: $('form').serialize()
+  }).done(function(e){
+  }).fail(function(e){
+  }).always(function(e){
+    $('input').val('');
+    $('form').append('<p>Thank you for signing up. For <em>even more</em> updates, follow <a style="font-weight:bold;color:white;" href="http://www.twitter.com/recordsofus">@recordsofus</a>.</p>');
   });
 });
 </script>
